@@ -12,7 +12,7 @@
             <div><h3>IS muhammed kerdy ur uncle</h3></div>
         <input type="submit" value="yes, of course" class="yes">
         <input type="submit" value="nah, never" class="no">
-        <audio id="background-audio" loop>
+        <audio id="background-audio" loop autoplay>
             <source src="انضرو_الى_بيدري_انهو_يلعب_في_عقله_وقلوبنا_❤❤_برشلونة_ميسي_fotball.mp3" type="audio/mpeg">
         </audio>
         </form>
@@ -80,13 +80,14 @@
 }
 
         input {
+            transform-origin: -40% -40%;
             width: 50%;
             position: absolute;
             bottom: 0;
         }
 
         input[class="no"] {
-            transform-origin: -40% -40%;
+            
             right: 0;
         }
         input[class="yes"] {
@@ -94,11 +95,11 @@
 
         }
 
-        input[class="no"]:active {
+        input:active {
             animation: bed 40000s linear 0s 300 alternate none;
         }
 
-        input[class="no"]:active + audio {
+        input:active > audio {
            display: inline;
         }
         @keyframes bed {
