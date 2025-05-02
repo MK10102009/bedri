@@ -1,3 +1,4 @@
+M:
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
@@ -14,7 +15,7 @@
             color: #333;
         }
         header {
-            background: #222;
+            background: linear-gradient(to right, #333, #555);
             color: #fff;
             padding: 20px 0;
             text-align: center;
@@ -23,20 +24,49 @@
             background: #444;
             padding: 10px;
             text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
         nav a {
             color: #fff;
             margin: 0 15px;
             text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 4px;
+            transition: background 0.3s;
+        }
+        nav a:hover {
+            background: #666;
         }
         section {
             padding: 20px;
             margin: 10px;
             background: #fff;
             border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        section img {
+            max-width: 100%;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background: #555;
         }
         h2 {
             color: #444;
+            margin-top: 0;
         }
         footer {
             background: #222;
@@ -67,36 +97,205 @@
 <section id="origin">
     <h2>أصل الإنسان</h2>
     <p>تبدأ قصة الإنسان منذ ملايين السنين، حيث ظهر الإنسان الأول في أفريقيا. خريطة انتشار الإنسان توضح كيف انتقل من أفريقيا إلى باقي أنحاء العالم، مع اكتشافات مهمة مثل هيكل "لوسي".</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Homo_sapiens_skull.jpg" alt="جمجمة الإنسان الأول">
+    <a href="#top" class="btn">العودة للأعلى</a>
 </section>
 
 <section id="stone">
     <h2>العصور الحجرية</h2>
     <p>العصر الحجري انقسم إلى قديم وأوسط وحديث. اعتمد الإنسان على الصيد وصنع الأدوات الحجرية والنار، وسكن الكهوف.</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/9e/Cave_paintings_at_Altamira.jpg" alt="رسومات الكهوف">
+    <a href="#top" class="btn">العودة للأعلى</a>
 </section>
 
 <section id="ancient">
     <h2>حضارات ما قبل الميلاد</h2>
     <p>ظهرت حضارات قوية مثل مصر الفرعونية وبلاد الرافدين ووادي السند والصين القديمة، وحققت إنجازات عظيمة في الكتابة والهندسة والفلك.</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e3/KarnakTemple.jpg" alt="معبد الكرنك">
+    <a href="#top" class="btn">العودة للأعلى</a>
 </section>
 
 <section id="medieval">
     <h2>العصور الوسطى</h2>
     <p>في هذه الفترة، ازدهرت أوروبا بالإقطاع والكنيسة، بينما العالم الإسلامي تألق في العلم والطب والفتوحات.</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Alhambra_palace_spain.jpg" alt="قصر الحمراء">
+    <a href="#top" class="btn">العودة للأعلى</a>
 </section>
 
 <section id="industrial">
     <h2>الثورة الصناعية</h2>
     <p>تغير شكل الحياة مع ظهور الآلات، وبرز مخترعون مثل جيمس وات وتوماس إديسون، وانتشرت المصانع في كل مكان.</p>
+    <img src="https://upload.wikimedia.
+
+org/wikipedia/commons/0/07/Coalbrookdale_by_Night.jpg" alt="الثورة الصناعية">
+    <a href="#top" class="btn">العودة للأعلى</a>
 </section>
 
 <section id="digital">
     <h2>العصر الرقمي</h2>
     <p>منذ منتصف القرن العشرين، تطورت الحواسيب والإنترنت بسرعة، وأصبح الذكاء الاصطناعي جزء أساسي من حياتنا.</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Internet_map_1024.jpg" alt="خريطة الإنترنت">
+    <a href="#top" class="btn">العودة للأعلى</a>
 </section>
 
 <section id="future">
     <h2>المستقبل والتكنولوجيا</h2>
     <p>نتطلع لاستكشاف الفضاء بفضل مشاريع مثل ناسا وسبيس إكس، وننتظر تطورات مذهلة في الطب والذكاء الاصطناعي.</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e3/SpaceX_Crew_Dragon_%28cropped%29.jpg" alt="سبيس إكس">
+    <a href="#top" class="btn">العودة للأعلى</a>
+</section>
+
+<footer>
+    <p>حقوق النشر © 2025 رحلة الإنسان</p>
+</footer>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>رحلة الإنسان: من الكهف إلى الفضاء</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(to right, #333, #555);
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            background: #444;
+            padding: 10px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 4px;
+            transition: background 0.3s;
+        }
+        nav a:hover {
+            background: #666;
+        }
+        section {
+            padding: 20px;
+            margin: 10px;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        section img {
+            max-width: 100%;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background: #555;
+        }
+        h2 {
+            color: #444;
+            margin-top: 0;
+        }
+        footer {
+            background: #222;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>رحلة الإنسان: من الكهف إلى الفضاء</h1>
+    <p>استكشف كيف تطور الإنسان عبر العصور</p>
+</header>
+
+<nav>
+    <a href="#origin">أصل الإنسان</a>
+    <a href="#stone">العصور الحجرية</a>
+    <a href="#ancient">حضارات ما قبل الميلاد</a>
+    <a href="#medieval">العصور الوسطى</a>
+    <a href="#industrial">الثورة الصناعية</a>
+    <a href="#digital">العصر الرقمي</a>
+    <a href="#future">المستقبل والتكنولوجيا</a>
+</nav>
+
+<section id="origin">
+    <h2>أصل الإنسان</h2>
+    <p>تبدأ قصة الإنسان منذ ملايين السنين، حيث ظهر الإنسان الأول في أفريقيا. خريطة انتشار الإنسان توضح كيف انتقل من أفريقيا إلى باقي أنحاء العالم، مع اكتشافات مهمة مثل هيكل "لوسي".</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Homo_sapiens_skull.jpg" alt="جمجمة الإنسان الأول">
+    <a href="#top" class="btn">العودة للأعلى</a>
+</section>
+
+<section id="stone">
+    <h2>العصور الحجرية</h2>
+    <p>العصر الحجري انقسم إلى قديم وأوسط وحديث. اعتمد الإنسان على الصيد وصنع الأدوات الحجرية والنار، وسكن الكهوف.</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/9e/Cave_paintings_at_Altamira.jpg" alt="رسومات الكهوف">
+    <a href="#top" class="btn">العودة للأعلى</a>
+</section>
+
+<section id="ancient">
+    <h2>حضارات ما قبل الميلاد</h2>
+    <p>ظهرت حضارات قوية مثل مصر الفرعونية وبلاد الرافدين ووادي السند والصين القديمة، وحققت إنجازات عظيمة في الكتابة والهندسة والفلك.</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e3/KarnakTemple.jpg" alt="معبد الكرنك">
+    <a href="#top" class="btn">العودة للأعلى</a>
+</section>
+
+<section id="medieval">
+    <h2>العصور الوسطى</h2>
+    <p>في هذه الفترة، ازدهرت أوروبا بالإقطاع والكنيسة، بينما العالم الإسلامي تألق في العلم والطب والفتوحات.</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Alhambra_palace_spain.jpg" alt="قصر الحمراء">
+    <a href="#top" class="btn">العودة للأعلى</a>
+</section>
+
+<section id="industrial">
+    <h2>الثورة الصناعية</h2>
+    <p>تغير شكل الحياة مع ظهور الآلات، وبرز مخترعون مثل جيمس وات وتوماس إديسون، وانتشرت المصانع في كل مكان.</p>
+    <img src="https://upload.wikimedia.
+
+org/wikipedia/commons/0/07/Coalbrookdale_by_Night.jpg" alt="الثورة الصناعية">
+    <a href="#top" class="btn">العودة للأعلى</a>
+</section>
+
+<section id="digital">
+    <h2>العصر الرقمي</h2>
+    <p>منذ منتصف القرن العشرين، تطورت الحواسيب والإنترنت بسرعة، وأصبح الذكاء الاصطناعي جزء أساسي من حياتنا.</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Internet_map_1024.jpg" alt="خريطة الإنترنت">
+    <a href="#top" class="btn">العودة للأعلى</a>
+</section>
+
+<section id="future">
+    <h2>المستقبل والتكنولوجيا</h2>
+    <p>نتطلع لاستكشاف الفضاء بفضل مشاريع مثل ناسا وسبيس إكس، وننتظر تطورات مذهلة في الطب والذكاء الاصطناعي.</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e3/SpaceX_Crew_Dragon_%28cropped%29.jpg" alt="سبيس إكس">
+    <a href="#top" class="btn">العودة للأعلى</a>
 </section>
 
 <footer>
